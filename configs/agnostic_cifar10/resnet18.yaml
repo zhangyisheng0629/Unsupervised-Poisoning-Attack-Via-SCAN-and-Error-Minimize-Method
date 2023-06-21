@@ -1,0 +1,34 @@
+num_classes: 10
+epochs: 40
+grad_clip: 5.0
+log_frequency: 100
+
+model:
+  name: ResNet18
+  num_classes: 10
+
+
+criterion:
+  # Modify
+  name: CrossEntropyLoss
+#  name: SCELoss
+#  alpha: 0.1
+#  beta: 1.0
+#  num_classes: 10
+
+
+optimizer:
+  name: SGD
+  lr: 0.03
+  weight_decay: 5.e-4
+  momentum: 0.9
+
+scheduler:
+  name: CosineAnnealingLR
+  T_max: $epochs
+  eta_min: 0.0
+
+dataset:
+  name: DatasetGenerator
+  train_batch_size: 128
+  eval_batch_size: 128
