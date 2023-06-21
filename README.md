@@ -3,7 +3,8 @@
 
 Add experiments for label-agnostic dataset .  
   Supply AgnosticCIFAR10Folder etc. classes and some robust Loss functions for more robust training.
-## Samplewise noise for UEs on agnostic-cifar10
+
+## Generate agnostic label cifar10 min-min samplewise noise
 Set the argument --seed , it will automatically genarates an experiment folder.  
 The args --train_data_path, --test_data_path should be set to your own path.
 ```
@@ -27,8 +28,10 @@ The args --train_data_path, --test_data_path should be set to your own path.
 --num_steps 20
 --step_size 0.8
 ```
+
+## Train on agnostic label cifar10 min-min samplewise ue
 Remenber set the arg --seed and the arg --perturb_tensor_filepath simultaneously.
-## Classwise noise for UEs on agnostic-cifar10
+
 ```
 --seed 4
 --version resnet18
@@ -44,7 +47,41 @@ Remenber set the arg --seed and the arg --perturb_tensor_filepath simultaneously
 --test_data_path C:\Users\zhangyisheng\Desktop\My-Unsupervised-Classification-master\datasets\cifar-10
 ```
 
+## Generate agnostic label cifar10 min-min classwise noise
+```
+--seed 4
+--config_path configs/cifar10
+--exp_name result/agnostic_cifar10/min-min/classwise
+--version resnet18
+--train_data_type AgnosticCIFAR10Folder
+--noise_shape 10 3 32 32
+--epsilon 16
+--num_steps 1
+--step_size 0.8
+--attack_type min-min
+--perturb_type classwise
+--universal_train_target train_subset
+--universal_stop_error 0.1 --use_subset
+--num_of_workers 0
+--train_data_path C:\Users\zhangyisheng\Desktop\My-Unsupervised-Classification-master\datasets\agnostic-label-cifar-10-clean
+--test_data_path C:\Users\zhangyisheng\Desktop\My-Unsupervised-Classification-master\datasets\cifar-10
+```
 
+## Train on agnostic label cifar10 min-min classwise ue
+```
+--seed 4
+--version resnet18
+--exp_name result/agnostic_cifar10/min-min/classwise/
+--config_path configs/cifar10
+--train_data_type PoisonAgnosticCIFAR10Folder
+--poison_rate 1.0
+--perturb_type classwise
+--perturb_tensor_filepath result/agnostic_cifar10/min-min/classwise/resnet18_seed4\perturbation.pt
+--train
+--num_of_workers 0
+--train_data_path C:\Users\zhangyisheng\Desktop\My-Unsupervised-Classification-master\datasets\agnostic-label-cifar-10-clean
+--test_data_path C:\Users\zhangyisheng\Desktop\My-Unsupervised-Classification-master\datasets\cifar-10
+```
 # Aknowledgement
 ## Unlearnable Examples
 
