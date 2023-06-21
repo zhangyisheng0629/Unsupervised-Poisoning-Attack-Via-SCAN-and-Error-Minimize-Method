@@ -1,10 +1,10 @@
 
 # Labeling with clustering models (Gansbeke W etal.), generating noises with error-minimizing (Huang etal.) method.
 
-Add experiments for label-agnostic dataset .
+Add experiments for label-agnostic dataset .  
   Supply AgnosticCIFAR10Folder etc. classes and some robust Loss functions for more robust training.
 ## Samplewise noise for UEs on agnostic-cifar10
-Set the argument --seed , it will automatically genarates an experiment folder.
+Set the argument --seed , it will automatically genarates an experiment folder.  
 The args --train_data_path, --test_data_path should be set to your own path.
 ```
 --seed 4
@@ -27,7 +27,7 @@ The args --train_data_path, --test_data_path should be set to your own path.
 --num_steps 20
 --step_size 0.8
 ```
- Remenber set the arg --seed and the arg --perturb_tensor_filepath simultaneously.
+Remenber set the arg --seed and the arg --perturb_tensor_filepath simultaneously.
 ## Classwise noise for UEs on agnostic-cifar10
 ```
 --seed 4
