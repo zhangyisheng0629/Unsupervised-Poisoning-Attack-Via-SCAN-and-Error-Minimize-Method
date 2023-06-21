@@ -2,7 +2,7 @@
 # Labeling with clustering models (Gansbeke W etal.), generating noises with error-minimizing (Huang etal.) method.
 
 Add experiments for label-agnostic dataset .  
-  Supply AgnosticCIFAR10Folder etc. classes and some robust Loss functions for more robust training.
+  Supply AgnosticCIFAR10Folder etc. classes and some robust Loss functions for more robust training.  
   Dowmload the agnostic-label CIFAR10 dataset from [here](https://drive.google.com/file/d/1Hs6zrwVeIhtAZti2ezG3XRyto5xuF-Cs/view?usp=drive_link).
 ## Generate agnostic label cifar10 min-min samplewise noise
 Set the argument --seed , it will automatically genarates an experiment folder.  
