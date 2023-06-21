@@ -4,6 +4,33 @@
 Add experiments for label-agnostic dataset 
 ## Samplewise noise for UEs on agnostic-cifar10
 
+```
+--seed 4
+--version resnet18
+--exp_name result/agnostic_cifar10/min-min/samplewise/
+--config_path configs/cifar10
+--train_batch_size 512
+--eval_batch_size 512
+--num_of_workers 0
+--train_data_type AgnosticCIFAR10Folder
+--train_data_path C:\Users\zhangyisheng\Desktop\My-Unsupervised-Classification-master\datasets\agnostic-label-cifar-10-clean
+--test_data_type CIFAR10
+--test_data_path C:\Users\zhangyisheng\Desktop\My-Unsupervised-Classification-master\datasets\cifar-10
+--universal_stop_error 0.01
+--train_step 10
+--attack_type min-min
+--perturb_type samplewise
+--noise_shape 50000 3 32 32
+--epsilon 16
+--num_steps 20
+--step_size 0.8
+```
+## Classwise noise for UEs on agnostic-cifar10
+```
+
+```
+
+
 # Aknowledgement
 ## Unlearnable Examples
 
@@ -11,9 +38,7 @@ Code for ICLR2021 Spotlight Paper ["Unlearnable Examples: Making Personal Data U
 
 ### Experiments in the paper.
 Check scripts folder for *.sh for each corresponding experiments.
-```
-adasda
-```
+
 ### Sample-wise noise for unlearnable example on CIFAR-10
 ###### Generate noise for unlearnable examples
 ```console
