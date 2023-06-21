@@ -1,3 +1,10 @@
+
+# Labeling with clustering models (Gansbeke W etal.), generating noises with error-minimizing (Huang etal.) method.
+
+Add experiments for label-agnostic dataset 
+## Samplewise noise for UEs on agnostic-cifar10
+
+# Akknowledgement
 # Unlearnable Examples
 
 Code for ICLR2021 Spotlight Paper ["Unlearnable Examples: Making Personal Data Unexploitable "](https://openreview.net/forum?id=iAmZUo0DxC0) by Hanxun Huang, Xingjun Ma, Sarah Monazam Erfani, James Bailey, Yisen Wang.
