@@ -1,6 +1,7 @@
 
 # Labeling with clustering models (Gansbeke W etal.), generating noises with error-minimizing (Huang etal.) method.
-The repository is based on the Code from ICLR2021 Spotlight Paper ["Unlearnable Examples: Making Personal Data Unexploitable "](https://github.com/HanxunH/Unlearnable-Examples) by Hanxun Huang, Xingjun Ma, Sarah Monazam Erfani, James Bailey, Yisen Wang.  
+## The repository is based on the Code from ICLR2021 Spotlight Paper ["Unlearnable Examples: Making Personal Data Unexploitable "](https://github.com/HanxunH/Unlearnable-Examples) by Hanxun Huang, Xingjun Ma, Sarah Monazam Erfani, James Bailey, Yisen Wang.
+## and
 Add experiments for label-agnostic dataset .  
   Supply AgnosticCIFAR10Folder etc. classes and some robust Loss functions for more robust training.  
   Dowmload the agnostic-label CIFAR10 dataset from [here](https://drive.google.com/file/d/1Hs6zrwVeIhtAZti2ezG3XRyto5xuF-Cs/view?usp=drive_link).
@@ -85,4 +86,4 @@ Remenber set the arg --seed and the arg --perturb_tensor_filepath simultaneously
 # Aknowledgement
 ## Unlearnable Examples
 ICLR2021 Spotlight Paper ["Unlearnable Examples: Making Personal Data Unexploitable "](https://openreview.net/forum?id=iAmZUo0DxC0) by Hanxun Huang, Xingjun Ma, Sarah Monazam Erfani, James Bailey, Yisen Wang.  
-
+ECCV2020 [SCAN: Learning to Classify Images without Labels]https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123550273.pdf
