@@ -83,7 +83,8 @@ Remenber set the arg --seed and the arg --perturb_tensor_filepath simultaneously
 --train_data_path C:\Users\zhangyisheng\Desktop\My-Unsupervised-Classification-master\datasets\agnostic-label-cifar-10-clean
 --test_data_path C:\Users\zhangyisheng\Desktop\My-Unsupervised-Classification-master\datasets\cifar-10
 ```
-# Aknowledgement
-## Unlearnable Examples
+## Aknowledgement
+### Unlearnable Examples
 ICLR2021 Spotlight Paper ["Unlearnable Examples: Making Personal Data Unexploitable "](https://openreview.net/forum?id=iAmZUo0DxC0) by Hanxun Huang, Xingjun Ma, Sarah Monazam Erfani, James Bailey, Yisen Wang.  
+### SCAN
 ECCV2020 ["SCAN: Learning to Classify Images without Labels"](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123550273.pdf) by Wouter Van Gansbeke, Simon Vandenhende, Stamatios Georgoulis, Marc Proesmans, Luc van Gool.
